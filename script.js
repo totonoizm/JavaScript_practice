@@ -1,11 +1,3 @@
-function createParagraph(){
-    const para = document.createElement("p");
-    para.textContent = "ボタンが押されました";
-    document.body.appendChild(para);
-}
+let randomNumber = Math.floor(Math.random() + 100) + 1;
 
-const buttons = document.querySelectorAll("button");
-
-for(let i = 0; i < buttons.length ; i++){
-    buttons[i].addEventListener("click", createParagraph);
-}
+const guesses = document.querySelector('.guesses');
